@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
 1.Crear un acordeón de apertura simple o multi apertura a la vez 
 
+   - ver rama react-projects -> task_acordion
+
 ![image](https://github.com/user-attachments/assets/084427f0-7ca7-4831-93df-67009f357c5e)
 
 ![image](https://github.com/user-attachments/assets/6d71cd85-ff73-4b98-9ac9-bd53c03e1fc9)
