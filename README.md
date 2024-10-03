@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# REACT PROJECTS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ejercicios en React para estudiar a fondo los conceptos
 
-## Available Scripts
+https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
-In the project directory, you can run:
+1.Crear un acordeón de apertura simple o multi apertura a la vez 
 
-### `npm start`
+![image](https://github.com/user-attachments/assets/084427f0-7ca7-4831-93df-67009f357c5e)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/user-attachments/assets/6d71cd85-ff73-4b98-9ac9-bd53c03e1fc9)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Crear un App de react
+   _ > npx create-react-app react-projects
 
-### `npm test`
+![image](https://github.com/user-attachments/assets/4fc00d3f-ad7d-4079-9993-413dafda16bc)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/user-attachments/assets/b0b6c5e1-f0c8-44f4-a521-6fd2aec4e960)
 
-### `npm run build`
+- Código para crear Acordeón
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/user-attachments/assets/7b3d3bb9-4141-497f-9071-7ff55c7dd47f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- Index.js
+```
+import React, { useState } from "react";
+import { data } from "./data";
+import { Card } from "./Card";
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+import "./styles.css";
+export const Accordion = () => {
+  const [listDisplay, setListDisplay] = useState(["1"]);
+  const [enableMultiple, setEnabledMultiple] = useState(false);
+  const records = data;
+  const handleSetListDisplay = (id) => {
+    if (enableMultiple) {
+      let list = [...listDisplay];
+      if (listDisplay.includes(id)) {
+        list = list.filter((item) => item !== id);
+      } else {
+        list.push(id);
+      }
+      setListDisplay(list);
+    } else {
+      setListDisplay([id]);
+    }
+  };
+  const handleSetEnabledMultiple = () => {
+    if (enableMultiple) {
+      setListDisplay(["1"]);
+    }
+    setEnabledMultiple(!enableMultiple);
+  };
+  return (
+    <div className="container">
+      <button onClick={handleSetEnabledMultiple} className="button">
+        {enableMultiple ? "Selección Multiple" : "Selección Simple"}
+      </button>
+      {records &&
+        records.length > 0 &&
+        records.map((record) => (
+          <Card
+            key={record.id}
+            id={record.id}
+            question={record.question}
+            answer={record.answer}
+            showAnswer={listDisplay.includes(record.id)}
+            onShowAnswer={handleSetListDisplay}
+          />
+        ))}
+    </div>
+  );
+};
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- card.js
+```
+import React from "react";
+import "./styles.css";
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+export const Card = ({
+  id,
+  question,
+  answer,
+  showAnswer = false,
+  onShowAnswer,
+}) => {
+  return (
+    <div className="card-container">
+      <div className={showAnswer ? "card-question-selected" : "card-question"}>
+        <h5>{question}</h5>
+        <div style={{ cursor: "pointer" }} onClick={() => onShowAnswer(id)}>
+          {showAnswer ? "-" : "+"}
+        </div>
+      </div>
+      {showAnswer && <div>{answer}</div>}
+    </div>
+  );
+};
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-data.js
+```
+export const data = [
+  {
+    id: "1",
+    question: "¿Qué son los componentes del acordeón?",
+    answer:
+      "Los componentes de acordeón son elementos de la interfaz de usuario que se utilizan para organizar y presentar contenido de forma plegable. Por lo general, constan de un encabezado, contenido y una acción de expandir/contraer.",
+  },
+  {
+    id: "2",
+    question: "¿Para qué se utilizan?",
+    answer:
+      "Se emplean comúnmente en diversos contextos, incluidas preguntas frecuentes, descripciones de productos, menús de navegación, paneles de configuración y tablas de datos, para ahorrar espacio en la pantalla y proporcionar una interfaz estructurada y fácil de usar para presentar información u opciones.",
+  },
+  {
+    id: "3",
+    question: "El acordeón como instrumento musical",
+    answer:
+      "El acordeón es un instrumento musical con teclado y fuelle. Produce sonido mediante el paso del aire sobre las lengüetas cuando el intérprete expande o comprime el fuelle, utilizado en diversos géneros musicales.",
+  },
+  {
+    id: "4",
+    question: "¿Puedo crear un componente de acordeón con un marco diferente?",
+    answer:
+      "Sí, por supuesto, es muy posible crear un componente de acordeón con otro marco.",
+  },
+];
 
-## Learn More
+Styles.css
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+.button {
+    margin: 10px;
+}
+.card-container {
+    border: 1px solid lightgray;
+    width: 30%;
+}
+.card-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-question-selected {
+    display: flex;
+    flex-direction: row;
+    background-color: #CFE2FF;
+    justify-content: space-between;
+}
+``` 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Salida Selección Simple:
+ 
+![image](https://github.com/user-attachments/assets/e7c2dbf5-6b05-4f26-82c0-082d927e8300)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Salida Selección Multiple:
 
-### Making a Progressive Web App
+![image](https://github.com/user-attachments/assets/ffb9b6d2-312a-45b7-abc1-89dd2679dcbc)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
