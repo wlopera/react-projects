@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.button {
+    margin: 10px;
+}
+
+.card-container {
+    border: 1px solid lightgray;
+    width: 30%;
+}
+
+.card-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-question-selected {
+    display: flex;
+    flex-direction: row;
+    background-color: #CFE2FF;
+    justify-content: space-between;
+
+}
