@@ -1,0 +1,29 @@
+.container {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.star-selected {
+    color: yellow;
+}
+
+.star:hover {
+    color: yellow;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button:hover {
+    color: blue;
+}
