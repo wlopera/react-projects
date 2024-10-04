@@ -4,16 +4,16 @@
 
 https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
-## 1.Crear un acordeón de apertura simple o multi apertura a la vez 
+## 1.Crear un acordeón de apertura simple o multi apertura a la vez
 
-   - ver rama react-projects -> task_acordion
+- ver rama react-projects -> task_acordion
 
 ![image](https://github.com/user-attachments/assets/084427f0-7ca7-4831-93df-67009f357c5e)
 
 ![image](https://github.com/user-attachments/assets/6d71cd85-ff73-4b98-9ac9-bd53c03e1fc9)
 
 - Crear un App de react
-   _ > npx create-react-app react-projects
+  \_ > npx create-react-app react-projects
 
 ![image](https://github.com/user-attachments/assets/4fc00d3f-ad7d-4079-9993-413dafda16bc)
 
@@ -23,9 +23,8 @@ https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
 ![image](https://github.com/user-attachments/assets/7b3d3bb9-4141-497f-9071-7ff55c7dd47f)
 
-
-
 - Index.js
+
 ```
 import React, { useState } from "react";
 import { data } from "./data";
@@ -78,6 +77,7 @@ export const Accordion = () => {
 ```
 
 - card.js
+
 ```
 import React from "react";
 import "./styles.css";
@@ -104,6 +104,7 @@ export const Card = ({
 ```
 
 -data.js
+
 ```
 export const data = [
   {
@@ -132,7 +133,7 @@ export const data = [
   },
 ];
 
-Styles.css
+- Styles.css
 
 .container {
     display: flex;
@@ -159,30 +160,28 @@ export const data = [
     background-color: #CFE2FF;
     justify-content: space-between;
 }
-``` 
-
+```
 
 ### Salida Selección Simple:
- 
-![image](https://github.com/user-attachments/assets/e7c2dbf5-6b05-4f26-82c0-082d927e8300)
 
+![image](https://github.com/user-attachments/assets/e7c2dbf5-6b05-4f26-82c0-082d927e8300)
 
 ### Salida Selección Multiple:
 
 ![image](https://github.com/user-attachments/assets/ffb9b6d2-312a-45b7-abc1-89dd2679dcbc)
 
-
 ## 2.Crear un App con tres botones para mostrar colores aleatoriamente en RGB o Hexadecimal
 
 ![image](https://github.com/user-attachments/assets/d3e08767-4afb-4771-ba0c-024c1ff91dd5)
 ![image](https://github.com/user-attachments/assets/cc26f4b2-005e-4015-8619-9d5af4f08bdc)
-    
+
 ![image](https://github.com/user-attachments/assets/d631fd75-4ed2-403f-91ee-225c02b2103d)
 ![image](https://github.com/user-attachments/assets/07b3367e-957a-4fb4-9b70-5f00ee457d59)
 
 ### Código para crear colores
 
 - index.js
+
 ```
 import React, { useState } from "react";
 import "./styles.css";
@@ -272,6 +271,7 @@ export const RandomColor = () => {
 ```
 
 -styles.css
+
 ```
 .color-container {
     display: flex;
@@ -312,6 +312,3 @@ export const RandomColor = () => {
 ![image](https://github.com/user-attachments/assets/1a39d556-f023-4571-a75b-33ffd3369433)
 ![image](https://github.com/user-attachments/assets/10ce8a5f-7d54-4b27-8f48-3eccf8525ae0)
 ![image](https://github.com/user-attachments/assets/bea92aeb-fa71-40fd-af03-9974e66b830a)
-
-
-        
