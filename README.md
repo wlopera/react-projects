@@ -449,6 +449,6 @@ export const Star = ({
 
 - Luego de click en limpiar
 
-  ![image](https://github.com/user-attachments/assets/8244da7d-174b-4d5a-b667-718719456808)
+![image](https://github.com/user-attachments/assets/8244da7d-174b-4d5a-b667-718719456808)
 
 
