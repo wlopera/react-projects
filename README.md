@@ -313,8 +313,6 @@ export const RandomColor = () => {
 ![image](https://github.com/user-attachments/assets/10ce8a5f-7d54-4b27-8f48-3eccf8525ae0)
 ![image](https://github.com/user-attachments/assets/bea92aeb-fa71-40fd-af03-9974e66b830a)
 
-
-
 ## 3.Seleccionar Raiting - Calificación de estrellas
 
 ![image](https://github.com/user-attachments/assets/18437c73-8f8b-4a6e-bd04-dc85a319ffad)
@@ -323,10 +321,10 @@ export const RandomColor = () => {
 - Instalación de libraría para imágenes (icon start)
 - npm install react-icons --save
 
-
 ### Código
 
 - index.js
+
 ```
 import React, { useState } from "react";
 import { Star } from "./star";
@@ -381,6 +379,7 @@ export const StarRating = () => {
 ```
 
 -star.js
+
 ```
 import React from "react";
 import { FaStar } from "react-icons/fa";
@@ -407,6 +406,7 @@ export const Star = ({
 ```
 
 - styles.css
+
 ```
 .container {
     display: flex;    
@@ -451,22 +451,20 @@ export const Star = ({
 
 ![image](https://github.com/user-attachments/assets/8244da7d-174b-4d5a-b667-718719456808)
 
-
 ### 4.Crear un carrusel de imágenes
 
 - Crear un carrusel que muestre varias imágenes
 - Utilizar esta API de imágenes
--   https://picsum.photos/v2/list?page=2&limit=100
- 
+- https://picsum.photos/v2/list?page=2&limit=100
 
 - Utilizar la libraría para imágenes (icon start)
 - npm install react-icons --save
 - import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-
 ### Código
 
 - index.js
+
 ```
 index.js
 
@@ -582,6 +580,7 @@ export const ImageSlider = () => {
 ```
 
 -styles.css
+
 ```
 .container {
     width: 100vw;
@@ -621,7 +620,7 @@ export const ImageSlider = () => {
     display: flex;
     bottom: 1rem;
     flex-direction: row;
-    position: absolute;   
+    position: absolute;  
     justify-content: center;  
     align-items: center;      
     width: 100%;
@@ -661,8 +660,3 @@ export const ImageSlider = () => {
 ![image](https://github.com/user-attachments/assets/9cf62a19-59d4-47c3-86ce-d21465ae5ee6)
 ![image](https://github.com/user-attachments/assets/a0cbf7fd-1fc5-4d15-8051-d1c7c8575993)
 ![image](https://github.com/user-attachments/assets/bcabcc19-dc2e-4f35-8fc8-e6bf40fd403d)
-
-
-
-    
-
