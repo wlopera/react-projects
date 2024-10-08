@@ -1,14 +1,15 @@
 // import { Accordion } from "./components/accordion";
-
-import { StarRating } from "./components/star-rating";
-
 // import { RandomColor } from "./components/random-color";
+// import { StarRating } from "./components/star-rating";
+import { ImageSlider } from "./components/image-slider";
+
 function App() {
   return (
     <div>
       {/* <Accordion /> */}
       {/* <RandomColor /> */}
-      <StarRating />
+      {/* <StarRating /> */}
+      <ImageSlider />
     </div>
   );
 }
