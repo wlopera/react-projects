@@ -1,0 +1,33 @@
+.container {    
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading {
+    background-color: rgb(157, 157, 251);
+    color: blue;
+    text-align: center;
+    width: 99%;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 99%;
+}
+
+.image {
+    width: 18rem;
+    height: 15rem;
+    border: 1px solid grey;
+}
+
+.button-area {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
