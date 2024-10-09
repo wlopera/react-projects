@@ -4,14 +4,16 @@
 
 https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
-1.Crear un acordeón de apertura simple o multi apertura a la vez 
+## 1.Crear un acordeón de apertura simple o multi apertura a la vez
+
+1.Crear un acordeón de apertura simple o multi apertura a la vez
 
 ![image](https://github.com/user-attachments/assets/084427f0-7ca7-4831-93df-67009f357c5e)
 
 ![image](https://github.com/user-attachments/assets/6d71cd85-ff73-4b98-9ac9-bd53c03e1fc9)
 
 - Crear un App de react
-   _ > npx create-react-app react-projects
+  \_ > npx create-react-app react-projects
 
 ![image](https://github.com/user-attachments/assets/4fc00d3f-ad7d-4079-9993-413dafda16bc)
 
@@ -21,9 +23,8 @@ https://www.youtube.com/watch?v=5ZdHfJVAY-s&t=10s
 
 ![image](https://github.com/user-attachments/assets/7b3d3bb9-4141-497f-9071-7ff55c7dd47f)
 
-
-
 - Index.js
+
 ```
 import React, { useState } from "react";
 import { data } from "./data";
@@ -76,6 +77,7 @@ export const Accordion = () => {
 ```
 
 - card.js
+
 ```
 import React from "react";
 import "./styles.css";
@@ -102,6 +104,7 @@ export const Card = ({
 ```
 
 -data.js
+
 ```
 export const data = [
   {
@@ -157,15 +160,12 @@ export const data = [
     background-color: #CFE2FF;
     justify-content: space-between;
 }
-``` 
-
+```
 
 ### Salida Selección Simple:
- 
-![image](https://github.com/user-attachments/assets/e7c2dbf5-6b05-4f26-82c0-082d927e8300)
 
+![image](https://github.com/user-attachments/assets/e7c2dbf5-6b05-4f26-82c0-082d927e8300)
 
 ### Salida Selección Multiple:
 
 ![image](https://github.com/user-attachments/assets/ffb9b6d2-312a-45b7-abc1-89dd2679dcbc)
-
