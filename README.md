@@ -661,21 +661,19 @@ export const ImageSlider = () => {
 ![image](https://github.com/user-attachments/assets/a0cbf7fd-1fc5-4d15-8051-d1c7c8575993)
 ![image](https://github.com/user-attachments/assets/bcabcc19-dc2e-4f35-8fc8-e6bf40fd403d)
 
-
-## 5.Crear una App que permita cargar imágenes “infinitamente” 
+## 5.Crear una App que permita cargar imágenes “infinitamente”
 
 - Utilizar el siguiente link en pasos de 20 en 20
--		> https://dummyjson.com/products?limit=20&skip=
-
-
-
+-     > https://dummyjson.com/products?limit=20&skip=
 
 -Cuenta con un botón que debe agregar 20 imágenes adicionales en cada caso hasta llegar a 100
+
 - Luego de 100 imagenes el boton debe desactivarse.
 
 ### Código
 
 -index.js
+
 ```
 import React, { useEffect, useState } from "react";
 import "./styles.css";
@@ -741,6 +739,7 @@ export const LoadMoreData = () => {
 ```
 
 - styles.css
+
 ```
 .container {    
     width: 100vw;
@@ -786,9 +785,10 @@ export const LoadMoreData = () => {
 
 ![image](https://github.com/user-attachments/assets/0cf3dc77-6a8e-4676-ab18-d045a72377f9)
 
-## 6.Menú de opciones 
- 
+## 6.Menú de opciones
+
 - Data Json de entrada
+
 ```
 menus = [
   {
@@ -850,13 +850,13 @@ menus = [
 ];
 ```
 
-- Uso de imágenes 
+- Uso de imágenes
 -     import {FaMinus, FaPlus} from 'react-icons/fa'
-
 
 ### Código
 
 - index.js
+
 ```
 import React from "react";
 import { menus } from "./data";
@@ -876,6 +876,7 @@ export const TreeView = () => {
 ```
 
 -MenuList.js
+
 ```
 import React from "react";
 import { MenuItem } from "./MenuItem";
@@ -892,6 +893,7 @@ export const MenuList = ({ list } = []) => {
 ```
 
 -MenuItem.js
+
 ```
 import React, { useState } from "react";
 import { MenuList } from "./MenuList";
@@ -928,11 +930,12 @@ export const MenuItem = ({ item }) => {
 ```
 
 -styles.css
+
 ```
 .container {
     display: flex;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
 }
 
 .menu {
@@ -958,13 +961,8 @@ export const MenuItem = ({ item }) => {
 ```
 
 ### Salida
+
 ![image](https://github.com/user-attachments/assets/0d49ef0c-334b-4bc1-a495-0481795cbc48)
 ![image](https://github.com/user-attachments/assets/96bef766-6e74-4b3d-a81e-1c5cc66ac8b8)
 
 ![image](https://github.com/user-attachments/assets/6d4f9f8f-4a00-4eff-9397-d4ecbbbe9274)
-
-
-
-
-   
-
