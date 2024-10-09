@@ -3,8 +3,9 @@
 // import { StarRating } from "./components/star-rating";
 // import { ImageSlider } from "./components/image-slider";
 // import { LoadMoreData } from "./components/load-more-data";
+// import { TreeView } from "./components/tree-view";
 
-import { TreeView } from "./components/tree-view";
+import { QRCodeGenerator } from "./components/qr-code-generator";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <ImageSlider /> */}
       {/* <LoadMoreData /> */}
-      <TreeView />
+      {/* <TreeView /> */}
+      <QRCodeGenerator />
     </div>
   );
 }
