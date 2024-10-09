@@ -786,6 +786,7 @@ export const LoadMoreData = () => {
 ![image](https://github.com/user-attachments/assets/0cf3dc77-6a8e-4676-ab18-d045a72377f9)
 
 ## 6.Menú de opciones
+
 ![image](https://github.com/user-attachments/assets/5b0f50ca-e608-41cc-a0b8-75a17450b25e)
 ![image](https://github.com/user-attachments/assets/fb09ee1a-b673-4a5c-80c3-757b9b0403e5)
 
@@ -969,17 +970,17 @@ export const MenuItem = ({ item }) => {
 
 ![image](https://github.com/user-attachments/assets/6d4f9f8f-4a00-4eff-9397-d4ecbbbe9274)
 
-
 ## 7.Crear un código QR dando un texto
 
 ![image](https://github.com/user-attachments/assets/5fb87e00-59d6-4f60-b47c-3a5562ff9d3d)
 
-- Generar un código QR dado el texto de entrada. Debe utilizar la librería 
+- Generar un código QR dado el texto de entrada. Debe utilizar la librería
 -     > npm install react-qr-code
 
 ### Código
 
 - index.js
+
 ```
 import React, { useState } from "react";
 import QRCode from "react-qr-code";
@@ -1011,6 +1012,7 @@ export const QRCodeGenerator = () => {
 ```
 
 -styles.css
+
 ```
 .container {
     display: flex;
@@ -1029,7 +1031,3 @@ export const QRCodeGenerator = () => {
 
 ![image](https://github.com/user-attachments/assets/ee096a55-8067-404b-bc73-f3daa9a90b0f)
 ![image](https://github.com/user-attachments/assets/0681f4e9-1c33-4d8b-ac32-f1c1e13819ea)
-
-
-
-  

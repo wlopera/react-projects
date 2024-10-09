@@ -2,6 +2,9 @@
 
 ## Menú de opciones
 
+![image](https://github.com/user-attachments/assets/5b0f50ca-e608-41cc-a0b8-75a17450b25e)
+![image](https://github.com/user-attachments/assets/fb09ee1a-b673-4a5c-80c3-757b9b0403e5)
+
 - Data Json de entrada
 
 ```
