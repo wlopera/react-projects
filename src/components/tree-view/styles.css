@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 100vw; 
+    height: 100vh; 
+}
+
+.menu {
+    background-color: #0047AB;
+    color: white;
+    width: 25%;
+    overflow-y: auto;
+}
+
+.body {
+    width: 75%;
+}
+
+.list-ul {
+    list-style-type: none;
+}
+
+.item-container {
+   display: flex;
+}
+.item-icon {
+    padding-left: 1rem;
+    align-self: center;
+    cursor: pointer;
+}
