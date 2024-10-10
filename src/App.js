@@ -6,8 +6,9 @@
 // import { TreeView } from "./components/tree-view";
 // import { QRCodeGenerator } from "./components/qr-code-generator";
 // import { LightDarkMode } from "./components/light-dark-mode";
+// import { ScrollIndicator } from "./components/scroll-indicator";
 
-import { ScrollIndicator } from "./components/scroll-indicator";
+import { CustomTabs } from "./components/custom-tabs";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <TreeView /> */}
       {/* <QRCodeGenerator /> */}
       {/* <LightDarkMode /> */}
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
+      <CustomTabs />
     </div>
   );
 }
