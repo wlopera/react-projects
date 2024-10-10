@@ -1032,14 +1032,14 @@ export const QRCodeGenerator = () => {
 ![image](https://github.com/user-attachments/assets/ee096a55-8067-404b-bc73-f3daa9a90b0f)
 ![image](https://github.com/user-attachments/assets/0681f4e9-1c33-4d8b-ac32-f1c1e13819ea)
 
+## 8.Crear useState para cambiar fondo de oscuro (dark) <--> claro (light)
 
-## 8.Crear useState para cambiar fondo de oscuro (dark) <--> claro (light) 
-
-- Crear un useState para cambiar la pantalla de claro a  oscuro o viceversa. Almacenar el valor en el LocalStorage.
+- Crear un useState para cambiar la pantalla de claro a oscuro o viceversa. Almacenar el valor en el LocalStorage.
 
 ### Código
 
 - index.js
+
 ```
 import React from "react";
 import { useChangeTheme } from "./useChangeTheme";
@@ -1064,6 +1064,7 @@ export const LightDarkMode = () => {
 ```
 
 - useChangeTheme.js
+
 ```
 import { useEffect, useState } from "react";
 
@@ -1087,12 +1088,13 @@ export const useChangeTheme = (key, initValue) => {
 ```
 
 - styles.css
+
 ```
 :root{
     --background: white;
     --text-primary: black;
     --background-button: black;
-    --color-button: white   
+    --color-button: white  
 }
 [data-theme="dark"] {
     --background: black;
@@ -1112,8 +1114,8 @@ export const useChangeTheme = (key, initValue) => {
 }
 .text {
     height: 1.5rem;
-    font-size: 2rem;   
-    color:var(--text-primary) 
+    font-size: 2rem;  
+    color:var(--text-primary)
 }
 .button-container{
     padding-top: 0.5rem;
@@ -1136,7 +1138,7 @@ export const useChangeTheme = (key, initValue) => {
 ![image](https://github.com/user-attachments/assets/c3a99dc5-6402-4432-bbfd-69ff4c45ba2a)
 ![image](https://github.com/user-attachments/assets/a283d8fa-6ee8-47dc-ae6c-f839a6c0846e)
 
-## 9.Aplicación para avanzar (scroll) de una vista e indicar su avance  a medida que se avance en en scroll.
+## 9.Aplicación para avanzar (scroll) de una vista e indicar su avance a medida que se avance en en scroll.
 
 ![image](https://github.com/user-attachments/assets/fb06b322-9839-4498-b586-76e279504984)
 
@@ -1147,11 +1149,12 @@ export const useChangeTheme = (key, initValue) => {
 ![image](https://github.com/user-attachments/assets/96a05f4d-9845-48d6-a379-b935e7b59510)
 
 - Datos:
--    > https://dummyjson.com/products?limit=100
+- > https://dummyjson.com/products?limit=100
 
 ### Código
 
 - index.js
+
 ```
 import React, { useEffect, useState } from "react";
 
@@ -1207,11 +1210,12 @@ export const ScrollIndicator = () => {
 ```
 
 - styles.css
+
 ```
 .container {
     display: flex;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
 }
 .title {
@@ -1228,7 +1232,7 @@ export const ScrollIndicator = () => {
 }
 .advance {
     display:flex;
-    background-color: #aaf900; 
+    background-color: #aaf900;
     width: 100%;
     height: 0.5rem;
     margin-top: 3rem;
@@ -1243,7 +1247,6 @@ export const ScrollIndicator = () => {
 }
 ```
 
-
 ### Salida
 
 ![image](https://github.com/user-attachments/assets/89c57fbe-912a-4eab-9340-55cc6b20243a)
@@ -1253,23 +1256,23 @@ export const ScrollIndicator = () => {
 ![image](https://github.com/user-attachments/assets/e03befc6-4477-4784-8390-a4e0b62172ea)
 
 - Regresando el scroll
-  
+
   ![image](https://github.com/user-attachments/assets/ddb35f75-8718-41f3-a2fa-1445b484f7af)
 
+## 10.Crear manejo de tabs
 
-## 10.Crear manejo de tabs 
 ![image](https://github.com/user-attachments/assets/63ec87ef-f3de-4956-9387-b49f2517ce7a)
 
 ![image](https://github.com/user-attachments/assets/59fbee99-7070-4957-82d3-bef471088778)
 
 ![image](https://github.com/user-attachments/assets/1251f104-b421-42fa-b502-2576e3592f16)
 
-
 ![image](https://github.com/user-attachments/assets/a95aeaef-5b39-48b9-a24c-bc6d6b0c1ca1)
 
 ### Código
 
 - index.js
+
 ```
 import React, { useState } from "react";
 import { data } from "./data";
@@ -1315,6 +1318,7 @@ export const CustomTabs = () => {
 ```
 
 -Tab.js
+
 ```
 import React from "react";
 
@@ -1332,6 +1336,7 @@ export const Tab = ({ id, name, setCurrentId, seleted }) => {
 ```
 
 - ViewTab1.js
+
 ```
 import React from "react";
 import "../styles.css";
@@ -1347,6 +1352,7 @@ export const ViewTab1 = () => {
 ```
 
 - ViewTab2.js
+
 ```
 import React from "react";
 
@@ -1361,6 +1367,7 @@ export const ViewTab2 = () => {
 ```
 
 - ViewTab3.js
+
 ```
 import React from "react";
 
@@ -1377,6 +1384,7 @@ export const ViewTab3 = () => {
 ```
 
 - styles.css
+
 ```
 .container {
     display: flex;
@@ -1435,12 +1443,3 @@ export const ViewTab3 = () => {
 ![image](https://github.com/user-attachments/assets/5afd7f38-6fdd-42e6-8fe6-69eb808a3496)
 
 ![image](https://github.com/user-attachments/assets/4a5dde3d-d268-41a2-b422-7d8fe15e3991)
-
-
-
-
-
-
-
-
-
