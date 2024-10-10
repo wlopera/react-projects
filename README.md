@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1f414472-81b0-486a-ac3c-a6e19ece36fa)# REACT PROJECTS
+# REACT PROJECTS
 
 ## Ejercicios en React para estudiar a fondo los conceptos
 
