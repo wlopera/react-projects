@@ -1444,17 +1444,14 @@ export const ViewTab3 = () => {
 
 ![image](https://github.com/user-attachments/assets/4a5dde3d-d268-41a2-b422-7d8fe15e3991)
 
-
 ## 11.Crear una ventana modal
 
 ![image](https://github.com/user-attachments/assets/51638e42-2e18-4756-ada3-a7435b87bf15)
 
 ![image](https://github.com/user-attachments/assets/27779b13-f0dc-4985-918b-878b744da166)
 
-
-
-
 - Se va a utilizar @keyframes. (Animación sobre la pantalla)
+
 ```
 La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación. Esto le da un control más específico sobre los pasos intermedios de la secuencia de animación que se obtiene al dejar que el navegador maneje todo automáticamente.
 Para utilizar keyframes, se crea una regla de @keyframes con un nombre que es utilizada por la propiedad animation-name para que coincida con una animación de keyframe a su lista. Cada regla @keyframes contiene una lista de estilo de selectores de keyframe, cada una de los cuales está compuesto de un porcentaje a lo largo de la animación en la que se produce el keyframe así como un bloque que contiene la información de estilo para ese keyframe.
@@ -1465,10 +1462,10 @@ Sintaxis
 }
 ```
 
-
 ### Código
 
 -index.js
+
 ```
 import React, { useState } from "react";
 
@@ -1504,6 +1501,7 @@ export const CustomModalPopup = () => {
 ```
 
 -Modal.js
+
 ```
 import React from "react";
 
@@ -1530,6 +1528,7 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
 ```
 
 -styles.css
+
 ```
 .container {
     display: flex;
@@ -1543,14 +1542,14 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
     margin-top: 2rem;
 }
 .header {
-     color: white; 
+     color: white;
      font-weight: bold
 }
 .body {
-    font-weight: 400;   
+    font-weight: 400;  
 }
 .footer {
-     color: white; 
+     color: white;
      font-weight: bold
 }
 .modal-overlay {
@@ -1582,7 +1581,7 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
     display: flex;
     background-color: #5cb85c;
     width: 100%;
-    height: 100px;   
+    height: 100px;  
     justify-content: space-evenly;
 }
 .modal-header-title {
@@ -1605,7 +1604,7 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
     width: 100%;
     height: 200px;
     text-align: center;
-    background-color: white; 
+    background-color: white;
 }
 .modal-footer {
     background-color: #5cb85c;
@@ -1613,19 +1612,19 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
     height: 50px;
     text-align: center;
 }
-/* Animacion 
-    La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS 
-    mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe 
-    ser alcanzado por determinados puntos durante la animación. Esto le da un control más específico sobre los pasos 
+/* Animacion
+    La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS
+    mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe
+    ser alcanzado por determinados puntos durante la animación. Esto le da un control más específico sobre los pasos
     intermedios de la secuencia de animación que se obtiene al dejar que el navegador maneje todo automáticamente.
-    Para utilizar keyframes, se crea una regla de @keyframes con un nombre que es utilizada por la propiedad animation-name 
-    para que coincida con una animación de keyframe a su lista. Cada regla @keyframes contiene una lista de estilo de selectores 
-    de keyframe, cada una de los cuales está compuesto de un porcentaje a lo largo de la animación en la que se produce el keyframe 
+    Para utilizar keyframes, se crea una regla de @keyframes con un nombre que es utilizada por la propiedad animation-name
+    para que coincida con una animación de keyframe a su lista. Cada regla @keyframes contiene una lista de estilo de selectores
+    de keyframe, cada una de los cuales está compuesto de un porcentaje a lo largo de la animación en la que se produce el keyframe
     así como un bloque que contiene la información de estilo para ese keyframe.
     Puede listar los keyframes en cualquier orden, éstos serán tratados en el orden en que los porcentajes especificados indican que debe ocurrir.
     from: El modal comienza 200 píxeles por encima de su posición final y con una opacidad de 0 (invisible).
     to: El modal termina en su posición normal (top: 0) y con opacidad 1 (completamente visible).
-    animation: animateModal 0.9s ease-out;: Esta propiedad aplica la animación al modal cuando se abre. 
+    animation: animateModal 0.9s ease-out;: Esta propiedad aplica la animación al modal cuando se abre.
     La animación durará 0.9 segundos con una curva de aceleración ease-out, lo que significa que comenzará rápido y se desacelerará al final.
 */
 @keyframes animateModal {
@@ -1633,7 +1632,7 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
       top: -200px;
       opacity: 0;
     }
-  
+ 
     to {
       top: 0;
       opacity: 1;
@@ -1642,11 +1641,11 @@ export const Modal = ({ show, onClose, header, footer, children }) => {
 ```
 
 - Salida
-  
+
 ![image](https://github.com/user-attachments/assets/9e412538-f41b-46f7-90c4-c9d6d0f30c9e)
 
 ![image](https://github.com/user-attachments/assets/e90d984d-6bf0-4d90-92d7-f37a4ec653e6)
 
 ![image](https://github.com/user-attachments/assets/1b30248b-b3ec-4038-8bdc-3123cd9a79a2)
 
-- Click sobre la  ‘X‘ para cerrar la modal
+- Click sobre la ‘X‘ para cerrar la modal
