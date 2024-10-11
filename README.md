@@ -1664,20 +1664,19 @@ Muestra el Github del usuario
 
 ![image](https://github.com/user-attachments/assets/0a74d0dc-4fb2-4130-9c41-a6bb1fb61736)
 
-
 - Uso de Api de Github
-> https://api.github.com/users/${userName}
 
-
+  > https://api.github.com/users/${userName}
 
 - Ejemplo de consumo de API
--   > https://api.github.com/users/wlopera
-    
+- > https://api.github.com/users/wlopera
+
 ![image](https://github.com/user-attachments/assets/49ff8b8a-6f7d-4818-83ef-a7e5ff473c45)
 
 ### Código
 
 - index.js
+
 ```
 import React, { useState } from "react";
 import { getFormatDate } from "./util";
@@ -1731,6 +1730,7 @@ export const GithubProfileFinder = () => {
 ```
 
 - User.js
+
 ```
 import React from "react";
 
@@ -1760,6 +1760,7 @@ export const User = ({ user }) => {
 ```
 
 - util.js
+
 ```
 const months = [
   "Ene",
@@ -1786,6 +1787,7 @@ export const getFormatDate = (date) => {
 ```
 
 - styles.css
+
 ```
 .container {
     display: flex;
@@ -1862,5 +1864,3 @@ export const getFormatDate = (date) => {
 ![image](https://github.com/user-attachments/assets/244f8b02-f850-44d1-99e0-d88d721731e8)
 
 ![image](https://github.com/user-attachments/assets/8f5d66fd-d7ac-40b6-b5b9-b660be70eff4)
-
-
