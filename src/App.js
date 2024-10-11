@@ -8,8 +8,9 @@
 // import { LightDarkMode } from "./components/light-dark-mode";
 // import { ScrollIndicator } from "./components/scroll-indicator";
 // import { CustomTabs } from "./components/custom-tabs";
+// import { CustomModalPopup } from "./components/custom-modal-popup";
 
-import { CustomModalPopup } from "./components/custom-modal-popup";
+import { GithubProfileFinder } from "./components/github-profile-finder";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <LightDarkMode /> */}
       {/* <ScrollIndicator /> */}
       {/* <CustomTabs /> */}
-      <CustomModalPopup />
+      {/* <CustomModalPopup /> */}
+      <GithubProfileFinder />
     </div>
   );
 }
